@@ -49,3 +49,11 @@ $(document).on('click', '.issuesListItem', function() {
 
 }, 10000);
 });
+
+var token = '7237f31b7c5322d291df3961ae34c297f28c6c1b';
+
+$.ajaxSetup({
+  headers: {
+    "Authorization": "token " + token
+  }
+});
