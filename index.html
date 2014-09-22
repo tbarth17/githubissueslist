@@ -1,0 +1,33 @@
+<!doctype html>
+<html class="no-js">
+  <head>
+    <meta charset="utf-8">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, minimal-ui">
+    <title>githubissueslist</title>
+    <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+
+    <link rel="stylesheet" href="styles/vendor.css">
+
+    <link rel="stylesheet" href="styles/main.css">
+
+    <script src="scripts/vendor/modernizr.js"></script>
+  </head>
+  <body>
+    <ul class="issueListContainer"></ul>
+      <script type="text/template" id="issueListTemplate">
+        <li class="issuesListItem" id="<%= comments_url %>">
+          <span>Title: <%= title %></span>
+        </li>
+      </script>
+
+    <div class="commentBox"></div>
+      <script type="text/template" id="commentListTemplate">
+        <div><p>Body: <%= body %></p></div>
+      </script>
+
+    <script src="scripts/vendor.js"></script>
+
+        <script src="scripts/main.js"></script>
+</body>
+</html>
